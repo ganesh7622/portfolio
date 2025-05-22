@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: lightblue;
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.one{
+    display: flex;
+    height: 30vh;
+}
+.main-1{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-1{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+.main-1 ul{
+    list-style-type: none;
+    display: flex;
+}
+.main-1 a{
+    margin: 0 20px;
+}
+h4{
+    letter-spacing: 1px;
+    background-color: rgb(66, 207, 228);
+    padding: 10px 12px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+h4:hover{
+    box-shadow:  0 0 15px rgb(66, 207, 228),0 0 15px rgb(66, 207, 228)inset;
+}
+@media screen and (max-width:768px){
+    .one{
+        height: 6vh;
+    }
+    .main-1{
+        padding: 15px;
+    }
+    .main-1 h2{
+        font-size: 20px;
+    }
+    .main-1 h4{
+        font-size: 10px;
+    }
+    .main-1 ul{
+        flex-direction: column;
+    }
+    .main-1 li{
+        margin: 5px 0;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+}
+.two{
+    display: flex;
+    height: 80vh;
+}
+.main-2{
+    position: relative;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+.fa-brands{
+    font-size: 20px;
+}
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+.img{
+    position: absolute;
+    top: 30%;
+    right: 200px;
+}
+img{
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+img:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    img{
+        display: none;
+    }
+    .two{
+        display: flex;
+        height: 100vh;
+    }
+    .main-2{
+        position: relative;
+        margin-top: 50%;
+        margin:  auto;
+    }
+}
+.three{
+    display: flex;
+    height: 100vh;
+}
+.skills h2{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.skills li{
+    font-size: 15px;
+}
+.skills{
+    display: inline-block;
+    margin:  auto;
+    width: 350px;
+    height: 280px;
+    align-content: center;
+    padding: 10px 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.30);
+}
+.skills li{
+    list-style-type: none;
+    margin: 8px 0;
+    font-size: 15px;
+}
+.bar{
+    display: block;
+    height:10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 20px;
+    border: 1px solid lightslategray;
+}
+.bar span{
+    height: 10px;
+    background-color:green;
+    float: left;
+}
+.html{
+    width: 90%;
+    animation: html 5s;
+}
+.css{
+    width: 75%;
+    animation: css 3s;
+}
+.javascript{
+    width: 63%;
+    animation: javascript 4s;
+}
+.reactjs{
+    width: 70%;
+    animation: reactjs 5s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 63%;
+    }
+}
+@keyframes reactjs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@media screen and (max-width:768px){
+    .skills{
+        width: 250px;
+        height: 200px;
+        margin-top: 35%;
+        padding: 10px 35px 30px;
+    }
+    .skills h2{
+        font-size: 20px;
+    }
+    .skills li{
+        margin: 4px;
+        font-size: 10px;
+    }
+}
+.four{
+    display: flex;
+    height: 100vh;
+}
+.form h3{
+    text-align: center;
+}
+.form{
+    display: inline-block;
+    margin: 10% auto;
+    padding: 30px;
+    margin-top: 15%;
+    width: 400px;
+    border-radius: 20px;
+    height: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+.box{
+    margin: 20px 0;
+    height: 20px;
+    border: none;
+    border-bottom: 1.3px solid black;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.btn{
+    text-align: center;
+}
+button{
+    padding: 10px 30px;
+    width: 100%;
+    border: none;
+    background-color:  rgb(66, 207, 228);;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+button:hover{
+    box-shadow:  0 0 15px rgb(66, 207, 228),0 0 15px rgb(66, 207, 228)inset;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .form{
+        width: 300px;
+        height: 250px;
+        margin-top: 40%;
+    }
+    .box{
+        margin: 15px 0;
+    }
+}
